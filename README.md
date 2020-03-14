@@ -9,6 +9,7 @@ it is composed out of many software products and servers exposing the gitlab api
 ## Goals
 - Replace the gitlab omnibus release we will use the code name gitlab graal to hornor the guys at oracle that did the amazing job with the graal framework
 - https://about.gitlab.com/blog/2018/10/29/why-we-use-rails-to-build-gitlab/ should get referenced and how we overcome the dilema :)
+- https://docs.gitlab.com/ee/development/architecture.html
 - Reduce traffic and storage overhead https://docs.gitlab.com/omnibus/package-information/defaults.html
   - https://github.com/omniauth/omniauth - ruby
   - Redis - apache ignite
