@@ -16,4 +16,4 @@ it is composed out of many software products and servers exposing the gitlab api
   - NGINX - vertx
   - consul - apache ignite - atomx
   
-  
+  ![me](https://raw.githubusercontent.com/stealify/stealify-gitlab/master/gitlab.svg?sanitize=true)
