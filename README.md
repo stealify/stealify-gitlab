@@ -15,5 +15,19 @@ it is composed out of many software products and servers exposing the gitlab api
   - PostgreSQL - apache ignite
   - NGINX - vertx
   - consul - apache ignite - atomx
+  - gitlab geo - apache ignite
+  - fs - apache ignite
+  - logging - apache ignite
+  - Jaeger - OpenTelemetry + apache ignite
   
   ![me](https://raw.githubusercontent.com/stealify/stealify-gitlab/master/gitlab.svg?sanitize=true)
+
+
+## jaeger
+OpenTelemetry
+On 28-May-2019, the OpenTracing and OpenCensus projects announced their intention to merge into a new CNCF project called OpenTelemetry. The Jaeger and OpenTelemetry projects have different goals. OpenTelemetry aims to provide APIs and SDKs in multiple languages to allow applications to export various telemetry data out of the process, to any number of metrics and tracing backends. The Jaeger project is primarily the tracing backend that receives tracing telemetry data and provides processing, aggregation, data mining, and visualizations of that data. The Jaeger client libraries do overlap with OpenTelemetry in functionality. OpenTelemetry will natively support Jaeger as a tracing backend and eventually might make Jaeger native clients unnecessary. For more information please refer to a blog post Jaeger and OpenTelemetry.
+
+Multiple storage backends
+Jaeger supports two popular open source NoSQL databases as trace storage backends: Cassandra and Elasticsearch. There is also embedded database support using Badger. There are ongoing community experiments using other databases, such as ScyllaDB, InfluxDB, Amazon DynamoDB. Jaeger also ships with a simple in-memory storage for testing setups.
+
+OpenTelemtry is integrate into Stealify by default
